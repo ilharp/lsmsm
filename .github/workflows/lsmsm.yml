@@ -1,0 +1,17 @@
+name: lsmsm
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lsmsm:
+    name: lsmsm
+
+    runs-on: windows-2022
+
+    steps:
+
+      - name: lsmsm
+        run: tree "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Redist\MSVC\"
