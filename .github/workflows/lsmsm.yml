@@ -9,9 +9,11 @@ jobs:
   lsmsm:
     name: lsmsm
 
-    runs-on: windows-2022
+    runs-on: windows-2025
 
     steps:
 
       - name: lsmsm
-        run: tree "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Redist\MSVC\"
+        run: |
+          tree "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Redist\MSVC\"
+          tree "C:\Program Files (x86)\Windows Kits\10\bin\"
